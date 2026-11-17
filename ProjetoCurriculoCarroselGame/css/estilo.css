@@ -1,0 +1,430 @@
+header {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    border-bottom: 4px solid #1D1153; 
+    padding: 15px 0;
+    height: auto;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color: #CECBD8;
+}
+title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+.headerInside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.aboutImage {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    border: 4px solid #1D1153;
+    box-shadow: 5px 5px 0px #1D1153;
+    transition: transform 0.1s ease;
+}
+.aboutImage:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #d35f11;
+}
+.footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    color: #ffffff;
+}
+.footer a {
+    color: #d35f11 !important;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #d35f11;
+    padding: 5px 10px;
+    background: #1D1153;
+}
+.footer a:hover {
+    background: #d35f11;
+    color: #ffffff !important;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1D1153;
+    transition: margin-left 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+h1, h2, h3, h4 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+h1 { font-weight: 900; font-size: 2.2rem; }
+h2 { font-weight: 700; }
+.openbtn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #1D1153;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid #1D1153;
+    transition: all 0.1s ease;
+}
+.openbtn:hover {
+    background-color: #d35f11;
+    border-color: #d35f11;
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 0 #1D1153;
+}
+.closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+}
+.closebtn:hover {
+    color: #d35f11;
+}
+.sectionBorders {
+    border: 3px solid #1D1153;
+    margin: 30px 20px;
+    padding: 25px;
+    background: #ffffff;
+    box-shadow: 6px 6px 0px #1D1153;
+}
+.infoSection {
+    background-color: #CECBD8;
+}
+.profile-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-text {
+    flex: 1;
+    min-width: 250px;
+}
+.subtitle {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d35f11;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 5px 0 15px 0;
+}
+.section-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.4rem;
+    border-bottom: 3px solid #1D1153;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #1D1153;
+}
+
+/* --- CARDS DE EXPERIÊNCIA --- */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.card-brutal {
+    border: 4px solid #1D1153;
+    background: #CECBD8;
+    padding: 20px;
+    position: relative;
+    box-shadow: 5px 5px 0px #1D1153;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+}
+.card-brutal:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 9px 9px 0px #d35f11;
+    background: #ffffff;
+}
+.card-header h3 {
+    font-size: 1.2rem;
+    color: #1D1153;
+    margin-bottom: 4px;
+}
+.card-header h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #514680;
+}
+.card-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    background: #1D1153;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 10px 0;
+}
+.card-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.card-tags span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid #1D1153;
+    background: #ffffff;
+    padding: 2px 6px;
+}
+.card-badge {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background: #d35f11;
+    color: white;
+    padding: 2px 8px;
+    border: 2px solid #1D1153;
+}
+
+/* --- DETAILS / ACORDEÕES --- */
+details {
+    cursor: pointer;
+}
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+summary h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+}
+.plus {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    display: inline-block;
+}
+.plus::before, .plus::after {
+    content: '';
+    position: absolute;
+    background: #1D1153;
+    transition: transform 0.2s ease;
+}
+.plus::before { top: 7px; left: 0; width: 16px; height: 2px; }
+.plus::after { top: 0; left: 7px; width: 2px; height: 16px; }
+details[open] summary .plus::after {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+details[open] summary .plus::before {
+    transform: rotate(180deg);
+    background: #d35f11;
+}
+
+/* --- CARROSSEL --- */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #8982A7;
+    border: 3px solid #1D1153;
+    padding: 30px 10px;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px #1D1153;
+}
+.carousel-view {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    gap: 15px;
+}
+.carousel-item {
+    min-width: calc(33.333% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+    background: #CECBD8;
+    border: 2px solid #1D1153;
+    padding: 8px;
+    opacity: 0.4;
+    transform: scale(0.88);
+    transition: transform 0.3s, opacity 0.3s, border 0.3s;
+    position: relative;
+}
+.carousel-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #1D1153;
+    display: block;
+}
+.carousel-caption {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: #1D1153;
+    margin-top: 6px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.carousel-item.active {
+    opacity: 1;
+    transform: scale(1.05);
+    border: 3px solid #d35f11;
+    background: #ffffff;
+    box-shadow: 5px 5px 0px #1D1153;
+}
+.carousel-item.active .carousel-caption {
+    color: #d35f11;
+}
+.carousel-btn {
+    background-color: #1D1153;
+    color: #ffffff;
+    border: 2px solid #1D1153;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 800;
+    padding: 12px 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.1s ease;
+}
+.carousel-btn:hover {
+    background-color: #d35f11;
+    color: #ffffff;
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 0px #1D1153;
+}
+
+/* --- CORREÇÃO DA JANELA INFORMATIVA (OVERLAY) --- */
+.card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    background-color: #1D1153;
+    color: #ffffff;
+    border: 3px solid #d35f11;
+    padding: 12px;
+    box-shadow: 6px 6px 0px #000000;
+    text-align: left;
+    z-index: 20;
+    
+    /* ALTERADO: Escondido de forma que respeite a transição de opacidade */
+    visibility: hidden; 
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s ease;
+}
+.card-overlay h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #d35f11;
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    border-bottom: 1px dashed #CECBD8;
+    padding-bottom: 4px;
+}
+.card-overlay p {
+    font-size: 0.75rem;
+    line-height: 1.35;
+    margin: 5px 0;
+}
+.card-overlay strong {
+    color: #CECBD8;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Trava de segurança: Garante que os cards laterais inativos nunca mostrem o overlay */
+.carousel-item:not(.active) .card-overlay {
+    display: none !important;
+}
+
+/* ALTERADO: Aparece com efeito suave APENAS no hover da imagem em destaque (.active) */
+.carousel-item.active:hover .card-overlay {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Estruturas Gerais */
+ul li::marker { color: #d35f11; }
+ul { list-style-type: square; padding-left: 20px; }
+.contactList {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px dashed #1D1153;
+}
+.contactList ul li {
+    font-family: 'IBM Plex Mono', monospace;
+    margin-bottom: 8px;
+}
+.background { background-color: #CECBD8; }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: #1D1153;
+    border-top: 4px solid #1D1153;
+    margin-top: 40px;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    background-color: #514680;
+    overflow-x: hidden;
+    padding-top: 64px;
+    transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    border-right: 4px solid #1D1153;
+}
+.justsidebara {
+    text-decoration: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #ffffff;
+    display: block;
+    padding: 15px 25px;
+    transition: all 0.1s ease;
+}
+.justsidebara:hover {
+    background-color: #d35f11;
+    color: #1D1153;
+    padding-left: 35px;
+}
+@media (max-width: 600px) {
+    .carousel-item { min-width: calc(100% - 10px); transform: scale(1); opacity: 1; }
+    .carousel-item.active { transform: scale(1); box-shadow: none; }
+    .card-overlay { display: none !important; } /* Desativa o popup no mobile */
+}   

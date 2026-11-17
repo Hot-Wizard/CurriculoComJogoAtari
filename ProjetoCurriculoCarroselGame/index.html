@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <title id="title">PHGF</title>
+        <link rel="icon" type="image/png" href="imagem/alfaResizedLogo.png">
+        <script src="script.js"></script>
+    </head>
+    <body id="body" class="background">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="justsidebara" href="#sobre">_sobre</a>
+            <a class="justsidebara" href="#experiencia">_experiência</a>
+            <a class="justsidebara" href="#educacao">_educação</a>
+            <a class="justsidebara" href="#galeria">_projetos</a>
+            <a class="justsidebara" href="#detalhes">_competências</a>
+        </div>
+        
+        <header>
+            <div class="headerInside">
+                <button class="openbtn" onclick="openNav()">&#9776; MENU</button>
+                <h2>PEDRO H. G. F.</h2>
+            </div>
+        </header>
+
+        <section id="sobre" class="sectionBorders infoSection">
+            <div class="profile-container">
+                <img class="aboutImage" src="imagem/20260501_192800.jpg" alt="Pedro Henrique Gzesiuk Fragoso">
+                <div class="profile-text">
+                    <h1>Técnico em Programação de Jogos Digitais</h1>
+                    <p class="subtitle">Especialista em Sistemas de Computação, Sistemas Embarcados & Entusiasta da Física</p>
+                    <p>Focado no desenvolvimento de systems de processamento de dados e projetos de integração hardware/software.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="sectionBorders">
+            <h2 class="section-title">[01] EXPERIÊNCIA</h2>
+            <div class="cards-container">
+                <div class="card-brutal">
+                    <div class="card-header">
+                        <span class="card-badge badge-active">ATUAL</span>
+                        <h3>Programador Voluntário</h3>
+                        <h4>Instituto Meros Do Brasil & IFPR</h4>
+                    </div>
+                    <p class="card-date">Janeiro/2026 - Presente</p>
+                    <p class="card-description">Desenvolvimento de um jogo de realidade virtual utilizando a Unity 6 como motor, a biblioteca VR do Google Cardboard</p>
+                    <div class="card-tags">
+                        <span>C#</span><span>Git/GitHub</span><span>Unity 6</span><span>Arquitetura de Software</span>
+                    </div>
+                </div>
+
+                <div class="card-brutal">
+                    <div class="card-header">
+                        <h3>Bolsista Programador Projeto Meros do Brasil</h3>
+                        <h4>Instituto Meros do Brasil & IFPR</h4>
+                    </div>
+                    <p class="card-date">2025 - 2026</p>
+                    <p class="card-description">Atuação na pesquisa, apresentação em simpósios e planejamento de jogo de realidade virtual sobre a conscientização de um peixe nativo do litoral paranaense.</p>
+                    <div class="card-tags">
+                        <span>Pesquisa</span><span>Trello</span><span>Arquitetura de Software</span><span>Unity 6</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacao" class="sectionBorders">
+            <h2 class="section-title">[02] FORMAÇÃO_ACADÊMICA</h2>
+            <div class="cards-container">
+                <div class="card-brutal education-card">
+                    <div class="card-header">
+                        <h3>Técnico Integrado em Programação de Jogos Digitais</h3>
+                        <h4>Instituto Federal Tecnológico do Paraná</h4>
+                    </div>
+                    <p class="card-date">2023 - 2026</p>
+                    <p class="card-description">Foco em Lógica, Programação Low Level, Sistemas Digitais, Arquitetura de Software e IoT. Trabalho de Fim de Curso direcionado para simulação computacional de processo físicos envolvendos na produção de energia nuclear.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="sectionBorders">
+            <h3 style="margin-left: 8px;">_Galeria de Projetos</h3>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" onclick="moveCarousel(-1)">&lt; PREV</button>
+                
+                <div class="carousel-view">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-item">
+                            <img src="imagem/Captura de tela 2026-05-15 114721.png" alt="Tank's Menu">
+                            <span class="carousel-caption">Tank's - Menu Principal</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Interface gráfica de terminal projetada em C.</p>
+                                <p><strong>Foco técnico:</strong> Renderização otimizada em matrizes de caracteres e controle de frame-rate manual.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem/Captura de tela 2026-05-15 114736.png" alt="Tank's Gameplay">
+                            <span class="carousel-caption">Tank's - Gameplay ASCII</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Mecânica de gameplay e renderização em modo texto simulando hardware retrô.</p>
+                                <p><strong>Foco técnico:</strong> Atualização assíncrona do display e tratamento otimizado de buffers de memória.</p>
+                            </div>
+                        </div>
+
+                        <!-- JOGO WARLORDS 2P INTEGRADO NO CARROSSEL -->
+                        <div class="carousel-item warlords-item" id="warlordsCard">
+                            <div class="warlords-slot" id="warlordsSlot">
+                                <div class="warlords-wrapper" id="warlordsWrapper">
+                                    <canvas id="gameCanvas" width="512" height="256"></canvas>
+                                    <button type="button" class="warlords-expand-btn" id="warlordsExpandBtn" onclick="toggleWarlordsModal()">[ EXPANDIR ]</button>
+                                </div>
+                            </div>
+                            <span class="carousel-caption">Warlords 2P - Arcade JS</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Remake multiplayer local (2P) inspirado no clássico de Atari 1980.</p>
+                                <p><strong>Controles:</strong> P1 (A/D + W/Espaço) | P2 (J/L + I/Shift) | Reiniciar: R</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagem/Captura de tela 2026-05-22 112915.png" alt="ASCII Game 2">
+                            <span class="carousel-caption">Mecânica de Colisão Low-Level</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Motor de física 2D customizado implementado para rodar em hardware de baixo poder computacional.</p>
+                                <p><strong>Foco técnico:</strong> Algoritmos de colisão discretos baseados em matriz de coordenadas lógicas.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem/ChatGPT Image May 1, 2026, 07_43_52 PM.png" alt="Locked Dreams Concept">
+                            <span class="carousel-caption">Locked Dreams - Arte de Capa</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Design visual técnico para telas de splash screen e inicialização de firmware (Bootloader).</p>
+                                <p><strong>Foco técnico:</strong> Compressão de bitmaps para armazenamento em memórias flash SPI.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem/ChatGPT Image May 1, 2026, 08_25_16 PM.png" alt="Pixel Art Dungeon">
+                            <span class="carousel-caption">Pixel Art - Mockup de Fase</span>
+                            <div class="card-overlay">
+                                <h4>INFO_SISTEMA</h4>
+                                <p><strong>Aplicação:</strong> Simulação de mapeamento de tilesets em VRAM e algoritmos de paginação de sprites na tela.</p>
+                                <p><strong>Foco técnico:</strong> Arquitetura de sistemas gráficos digitais clássicos por barramento de dados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn next-btn" onclick="moveCarousel(1)">NEXT &gt;</button>
+            </div>
+        </section>
+
+        <div id="detalhes">
+            <section class="sectionBorders">
+                <details>
+                    <summary>
+                        <h3>Contatos & Links</h3>
+                        <span class="plus"></span>
+                    </summary>
+                    <div class="contactList">
+                        <ul>
+                            <li><strong>Email:</strong> pedro.fragoso@exemplo.com</li>
+                            <li><strong>Whatsapp:</strong> (41)99597-7550</li>
+                            <li><strong>GitHub:</strong> github.com/Hot-Wizard</li>
+                        </ul>       
+                    </div>
+                </details>
+            </section>
+
+            <section class="sectionBorders">
+                <details>
+                    <summary>
+                        <h3>Idiomas</h3>
+                        <span class="plus"></span>
+                    </summary>
+                    <div class="contactList">
+                        <ul>
+                            <li>Inglês Avançado (Técnico / Documentação)</li>
+                            <li>Polonês Básico</li>
+                            <li>Espanhol Básico</li>
+                            <li>Português Fluente</li>                   
+                        </ul>       
+                    </div>
+                </details>
+            </section>
+
+            <section class="sectionBorders">
+                <details>
+                    <summary>
+                        <h3>Hard & Soft Skills</h3>
+                        <span class="plus"></span>
+                    </summary>
+                    <div class="contactList">
+                        <ul>
+                            <li>Arquitetura de Software</li>
+                            <li>Desenvolvimento de Firmware (Bare-metal & RTOS)</li>
+                            <li>Trabalho em Grupo</li>
+                            <li>Instrumentação de Bancada (Lógica e Multímetro)</li>
+                            <li>Raciocínio Lógico & Resolução de Problemas Complexos</li>  
+                            <li>Autodidata & Leitura de Datasheets complexos</li>                  
+                        </ul>       
+                    </div>
+                </details>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 Pedro Henrique Gzesiuk Fragoso | Técnico em Programação de Jogos Digitais & Arquitetura de software</p>
+            <a href="https://github.com/Hot-Wizard" target="_blank">GitHub_Profile</a>
+        </footer>
+
+        <!-- Modal para jogar Warlords 2P em tela expandida -->
+        <div id="warlordsModal" class="warlords-modal" style="display: none;"></div>
+    </body>
+</html>
